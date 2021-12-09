@@ -65,7 +65,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automation allows for the quick configuration of multiple containers. This allows both rapid elasticity as well as scalability. 
 
-The [playbook](https://github.com/altezzaw/Elkstack-/files/7688117/Elk-configuration.yml) implements the following tasks:
+The [playbook](https://github.com/altezzaw/Elkstack-/files/7688117/Elk-configuration.txt) implements the following tasks:
 
    - Configure elk with Docker
    - Increase virtual memory
@@ -106,13 +106,13 @@ SSH into the control node and follow the steps below:
 - Update the etc/ansible/hosts file to include the local IP and the group name as well as the python interpreter. To specify the machine you want to Install the playbook on you need to add the group name that you entered into the hosts file into the playbook YAML file (ex. "hosts: websevers or hosts: elk")
 
 - Run the Web playbook to install dvwa on all three of the web servers, navigate to http://[Your.VM.Public.IP]/dvwa/setup.php to ensure the servers are up and running. 
-  - ansible-playbook [web-playbook.txt](https://github.com/altezzaw/Elkstack-/files/7688106/web-playbook.yml)
+  - ansible-playbook [web-playbook.txt](https://github.com/altezzaw/Elkstack-/files/7688106/web-playbook.txt)
 
 - Run the elk playbook, and navigate to http://[Your.VM.Public.IP]:5601/app/kibana check that the installation worked as expected.
-  - ansible-playbook [Elk-configuration.txt](https://github.com/altezzaw/Elkstack-/files/7688117/Elk-configuration.yml)
+  - ansible-playbook [Elk-configuration.txt](https://github.com/altezzaw/Elkstack-/files/7688117/Elk-configuration.txt)
 
 - From there you can run the Filebeat and Metricbeat yaml files to start receiving data from the web servers.
-  - ansible-playbook [Filebeat-config.txt](https://github.com/altezzaw/Elkstack-/files/7688166/Filebeat-config.yml)
+  - ansible-playbook [Filebeat-config.txt](https://github.com/altezzaw/Elkstack-/files/7688166/Filebeat-config.txt)
   - ansible-playbook [Metricbeat-config.txt](https://github.com/altezzaw/Elkstack-/files/7688173/Metricbeat-config.txt)
 
 
