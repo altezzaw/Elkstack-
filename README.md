@@ -116,4 +116,7 @@ SSH into the control node and follow the steps below:
   - ansible-playbook [Metricbeat-config.txt](https://github.com/altezzaw/Elkstack-/files/7688173/Metricbeat-config.txt)
 
 
+![image](https://user-images.githubusercontent.com/85532538/145470124-dac258e1-951f-4ca0-873c-089b41061397.png)
+
+
 
