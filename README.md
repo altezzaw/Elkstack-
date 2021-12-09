@@ -56,7 +56,7 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses      |
 |----------|---------------------|----------------------     |
 | Jump-Box | Yes                 | x.x.x.x                   |
-| ELK-VM   | Yes                 | x.x.x.x & 10.0.0.4        |
+| ELK-VM   | Yes                 | x.x.x.x & 10.1.0.4        |
 | Web-VM1  | No                  | 10.0.0.7                  |
 | Web-VM2  | No                  | 10.0.0.8                  |
 | Web-VM3  | No                  | 10.0.0.6                  |
